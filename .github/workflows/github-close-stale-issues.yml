@@ -14,11 +14,11 @@
 
 name: GitHub - Close stale issues
 on:
-  schedule: [cron: "50 0 * * 1"] # run weekly Monday 00:50 UTC
+  #schedule: [cron: "50 0 * * 1"] # run weekly Monday 00:50 UTC
   workflow_dispatch:
 jobs:
   job-close-stale-issues:
-    if: github.repository_owner == 'upx' && github.repository == 'upx/upx'
+    if: github.repository_owner == 'upx' && github.repository == 'lg-yyds/upx'
     name: Close stale issues
     runs-on: ubuntu-latest
     permissions:
